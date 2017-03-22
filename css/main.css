@@ -1,0 +1,288 @@
+*{
+    margin:0;
+    padding:0;
+    font-size: 12px;
+    line-height: 22px;
+    font-family: "微软雅黑";
+}
+
+ul ,ol > li{
+    list-style: none;
+}
+
+.cur{
+    background-color: #fff;
+    color:#00afc7;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    width:100%;
+    /*height: 87px;*/
+    border-bottom:1px solid #00afc7;
+}
+
+.header_content{
+    width:1200px;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.header_logo{
+    padding-top:15px;
+    float:left;
+}
+
+.header_nav{
+   float:right;
+    overflow: hidden;
+}
+
+.person_nav{
+    float:right;
+    overflow: hidden;
+    padding:5px 0 7px 0;
+}
+
+.person_nav li{
+    float:left;
+    padding:0 10px;
+    line-height: 12px;
+    color:#000;
+    border-right: 1px solid #ddd;
+}
+
+.html_nav{
+    clear:both;
+    float:right;
+    overflow: hidden;
+}
+
+.html_nav li{
+    float:left;
+    padding:17px 10px 0 10px;
+    line-height: 28px;
+}
+
+.html_nav li a{
+    font-size:16px;
+    line-height:28px;
+    font-weight: bold;
+}
+
+.html_nav li a:hover{
+    color:#00afc7
+}
+
+.account_nav_ad{
+    position: absolute;
+    top:10;
+    left:0;
+    z-index: 2;
+}
+
+.account_nav{
+    position: fixed;
+    top:0;
+    left:0;
+    width:30px;
+    height:100%;
+    /*background-color: #4c6dd6;*/
+    background-color: #7c8994;
+}
+
+.account_nav_vip{
+    padding:30px 0 ;
+    width:18px;
+    margin:auto;
+    margin-top:200px;
+}
+
+.account_nav_center li,.account_nav_other li{
+    padding:4px 0;
+    margin:4px 0;
+    line-height:20px;
+    color:#fff;
+    font-family: "宋体";
+    text-align: center;
+}
+
+.account_nav_center li img,.account_nav_other li img{
+    margin:4px auto;
+    width:auto;
+}
+
+.account_nav_other{
+    border:0;
+    margin-top: 50px;
+}
+
+.account_nav_vip li:hover,.account_nav_center li:hover,.account_nav_other li:hover{
+    cursor: pointer;
+}
+
+.content_center{
+    width:1200px;
+    margin:0 auto;
+}
+
+.recommend{
+    clear:both;
+    margin-top:25px;
+    overflow: hidden;
+}
+
+.recommend_left{
+    /*float:left;*/
+}
+
+.recommend_nav{
+    border-bottom:2px solid #00afc7;
+    height:39px;
+    width:100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.recommend_nav li{
+    float:left;
+    font-size: 16px;
+    line-height: 33px;
+    padding:0 13px;
+    font-weight: bold;
+    color:#00afc7;
+}
+
+.recommend_nav li:hover{
+    background-color: #00afc7;
+    color:#fff;
+    cursor: pointer;
+}
+
+/*韶关丹霞山*/
+.recommend_journey{
+    float:left;
+    border:1px solid #eee;
+    width:240px;
+    margin-right:10px;
+    margin-top:16px;
+    overflow: hidden;
+}
+
+.recommend_journey:hover{
+    border:1px solid #00afc7;
+}
+
+.top_journey{
+    clear:both;
+    float:left;
+    width:460px;
+}
+
+.recommend_journey_pic{
+    width:240px;
+}
+
+.top_journey .recommend_journey_info{
+    padding:7px 10px 5px 10px;
+    float:right;
+    width:184px;
+    height:218px;
+    position: relative;
+}
+
+.top_journey .recommend_journey_info h1{
+    line-height: 28px;
+    font-size:20px;
+    font-weight: bold;
+    color:#fff;
+    width:100%;
+    background-color: #00afc7;
+    text-align: center;
+    padding:10px 0;
+
+}
+
+.recommend_journey_info p{
+    line-height:26px;
+    color:#555;
+    margin-top:10px;
+
+}
+
+.top_journey .recommend_journey_info .recommend_journey_price{
+    width:100%;
+    position: absolute;
+    bottom:8px;
+}
+
+.recommend_journey_price span{
+    line-height:28px;
+    display: inline-block;
+}
+
+.price_now{
+    float:left;
+    color:#ff5555;
+    font-size:16px;
+    font-weight: bold;
+}
+
+.top_journey .recommend_journey_info .recommend_journey_price .price_now{
+    padding-left:10px;
+}
+.price_market{
+    float:right;
+    text-decoration: line-through;
+    color:#999;
+}
+
+.top_journey .recommend_journey_info .recommend_journey_price .price_market{
+     padding-right: 15px;
+}
+
+/*左侧*/
+.content_center{
+    width:1200px;
+    margin-top:10px;
+
+}
+
+.search_nav{
+    border:1px solid #00afc7;
+    background-color: #00afc7;
+    width:80px;
+}
+
+.search_nav_left{
+    width:80px;
+    background-color: #00afc7;
+    float:left;
+}
+
+.search_nav_left li{
+    font-size: 18px;
+    /*color:#fff;*/
+    text-align: center;
+    padding:2px 0;
+    line-height: 32px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.search_nav_left li:hover{
+    cursor:pointer;
+}
+
+
+/*右侧*/
+.search_nav_right{
+    margin-left:80px;
+    /*float:right;*/
+    border:1px solid #00afc7;
+    width:500px;
+    height:293px;
+    display: none;
+}
+

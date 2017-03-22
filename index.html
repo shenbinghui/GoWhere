@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>去哪儿网</title>
+    <script>
+        window.onload=function(){
+            var rightdiv = document.getElementsByClassName("search_nav_right");
+            rightdiv[0].style.display='block';
+
+            var leftNav = document.getElementById("leftNav");
+            var leftNavli = leftNav.getElementsByTagName("li");
+
+            for(var i=0;i<leftNavli.length;i++){
+                leftNavli[i].index=i;
+                leftNavli[i].onclick=function(){
+                    var num = this.index;
+
+                    for(var j=0;j<rightdiv.length;j++){
+                        leftNavli[j].className="";
+                        rightdiv[j].style.display='none';
+                    }
+                    leftNavli[num].className='cur';
+                    rightdiv[num].style.display='block';
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<!--头部-->
+    <header>
+        <div class="header_content">
+            <img src="images/logo.png" class="header_logo">
+            <div class="header_nav">
+                <ul class="person_nav">
+                    <li>登录</li>
+                    <li>免费注册</li>
+                    <li>消息</li>
+                    <li>查看订单</li>
+                    <li>积分商城</li>
+                    <li>联系客服</li>
+                    <li>In English</li>
+                </ul>
+
+                <ul class="html_nav">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">机票</a></li>
+                    <li><a href="#">酒店</a></li>
+                    <li><a href="#">团购</a></li>
+                    <li><a href="#">度假</a></li>
+                    <li><a href="#">门票</a></li>
+                    <li><a href="#">火车票</a></li>
+                    <li><a href="#">攻略</a></li>
+                    <li><a href="#">公寓</a></li>
+                    <li><a href="#">当地人</a></li>
+                    <li><a href="#">车车</a></li>
+                    <li><a href="#">汽车票</a></li>
+                    <li><a href="#">海外</a></li>
+                    <li><a href="#">保险</a></li>
+                    <li><a href="#">金融</a></li>
+                    <li><a href="#">会场</a></li>
+                    <li><a href="#">会场</a></li>
+                    <li><img src="images/logo.png" style="height:20px"/></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+<img src="images/pic3.png"  class="account_nav_ad" />
+
+
+    <div class="content_center">
+        <!--按条件搜索-->
+        <div class="search_nav">
+            <!--左侧导航-->
+            <ul class="search_nav_left" id="leftNav">
+                <li>机票</li>
+                <li class="cur">酒店</li>
+                <li>火车票</li>
+                <li>度假</li>
+                <li>门票</li>
+                <li>团购</li>
+                <li>车车</li>
+                <li>自由行</li>
+            </ul>
+
+            <!--右侧信息-->
+            <!--机票-->
+            <div class="search_nav_right">
+                机票
+            </div>
+            <div class="search_nav_right">
+                酒店
+            </div>
+            <div class="search_nav_right">
+                火车票
+            </div>
+            <div class="search_nav_right">
+                度假
+            </div>
+            <div class="search_nav_right">
+                门票
+            </div>
+            <div class="search_nav_right">
+                团购
+            </div>
+            <div class="search_nav_right">
+                车车
+            </div>
+            <div class="search_nav_right">
+                自由行
+            </div>
+        </div>
+        <!--特惠推荐-->
+        <div class="recommend">
+            <div class="recommend_left">
+                <ul class="recommend_nav">
+                    <li class="cur">今日特惠</li>
+                    <li>特惠门票</li>
+                    <li>特惠住宿</li>
+                </ul>
+            </div>
+            <div class="recommend_content">
+                <!--丹霞山-->
+                <div class="recommend_journey top_journey">
+                    <img src="images/dxs.jpg" class="recommend_journey_pic"/>
+                    <div class="recommend_journey_info">
+                        <h1>韶关丹霞山</h1>
+                        <p>丹霞地貌命名地</p>
+                        <div class="recommend_journey_price">
+                            <span class="price_now">￥2699</span>
+                            <span class="price_market">门市价：￥3000</span>
+                        </div>
+                    </div>
+                </div>
+                <!--长隆-->
+                <div class="recommend_journey">
+                    <img src="images/cl.jpg" class="recommend_journey_pic"/>
+                    <div class="recommend_journey_info">
+                        <h1>长隆国际大马戏剧院</h1>
+                        <p>荟萃全球马戏精华</p>
+                        <div class="recommend_journey_price">
+                            <span class="price_now">￥188</span>
+                            <span class="price_market">门市价：￥300</span>
+                        </div>
+                    </div>
+                </div>
+                <!--珠海-->
+                <div class="recommend_journey">
+                    <img src="images/zh.jpg" class="recommend_journey_pic"/>
+                    <div class="recommend_journey_info">
+                        <h1>珠海御温泉</h1>
+                        <p>中国第一家日式露天温泉</p>
+                        <div class="recommend_journey_price">
+                            <span class="price_now">￥83</span>
+                            <span class="price_market">门市价：￥100</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--宝墨园-->
+            <div class="recommend_journey top_journey">
+                <img src="images/bmy.jpg" class="recommend_journey_pic"/>
+                <div class="recommend_journey_info">
+                    <h1>宝墨园</h1>
+                    <p>华夏文化浓缩地之一</p>
+                    <div class="recommend_journey_price">
+                        <span class="price_now">￥3.7</span>
+                        <span class="price_market">门市价：￥30</span>
+                    </div>
+                </div>
+            </div>
+            <!--华侨城-->
+            <div class="recommend_journey">
+                <img src="images/hqc.jpg" class="recommend_journey_pic"/>
+                <div class="recommend_journey_info">
+                    <h1>华侨城</h1>
+                    <p>世界几千年人类文明为您一次呈现</p>
+                    <div class="recommend_journey_price">
+                        <span class="price_now">￥200</span>
+                        <span class="price_market">门市价：￥500</span>
+                    </div>
+                </div>
+            </div>
+            <!--岭南印象园-->
+            <div class="recommend_journey">
+                <img src="images/lnyxy.jpg" class="recommend_journey_pic"/>
+                <div class="recommend_journey_info">
+                    <h1>岭南印象园</h1>
+                    <p>岭南紧致，千种印象</p>
+                    <div class="recommend_journey_price">
+                        <span class="price_now">￥8</span>
+                        <span class="price_market">门市价：￥10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+<!--左侧导航-->
+
+    <nav class="account_nav">
+        <ul class="account_nav_vip">
+            <li><img src="images/pic2.png" /></li>
+        </ul>
+        <ul class="account_nav_center">
+            <li><img src="images/pic2.png" />消息</li>
+            <li><img src="images/pic2.png" />订单</li>
+            <li><img src="images/pic2.png" />账户</li>
+        </ul>
+        <ul class="account_nav_other">
+            <li><img src="images/pic2.png" />建议</li>
+            <li><img src="images/pic2.png" />扫码</li>
+            <li><img src="" /></li>
+        </ul>
+    </nav>
+</body>
+</html>
